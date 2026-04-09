@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THERMOSYNC | Master the Elements</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#ffdad6",
+                    "surface-bright": "#3a3939",
+                    "on-primary-fixed": "#002020",
+                    "secondary-fixed-dim": "#abc7ff",
+                    "surface-variant": "#353534",
+                    "primary-fixed": "#00fbfb",
+                    "on-primary": "#003737",
+                    "on-tertiary": "#383100",
+                    "surface": "#131313",
+                    "surface-container-lowest": "#0e0e0e",
+                    "tertiary-container": "#fce442",
+                    "secondary-fixed": "#d7e2ff",
+                    "outline-variant": "#3a4a49",
+                    "inverse-on-surface": "#313030",
+                    "background": "#131313",
+                    "inverse-primary": "#006a6a",
+                    "primary-fixed-dim": "#00dddd",
+                    "secondary-container": "#448fff",
+                    "inverse-surface": "#e5e2e1",
+                    "on-primary-container": "#007070",
+                    "on-secondary-fixed": "#001b3f",
+                    "on-secondary-container": "#002859",
+                    "on-secondary": "#002f66",
+                    "tertiary": "#ffffff",
+                    "on-error": "#690005",
+                    "on-background": "#e5e2e1",
+                    "secondary": "#abc7ff",
+                    "surface-container": "#201f1f",
+                    "surface-tint": "#00dddd",
+                    "error": "#ffb4ab",
+                    "on-tertiary-fixed-variant": "#504700",
+                    "on-tertiary-container": "#716500",
+                    "surface-container-highest": "#353534",
+                    "tertiary-fixed-dim": "#dec723",
+                    "tertiary-fixed": "#fce442",
+                    "on-tertiary-fixed": "#201c00",
+                    "error-container": "#93000a",
+                    "primary-container": "#00fbfb",
+                    "on-surface": "#e5e2e1",
+                    "surface-container-high": "#2a2a2a",
+                    "surface-container-low": "#1c1b1b",
+                    "on-surface-variant": "#b9cac9",
+                    "primary": "#ffffff",
+                    "on-primary-fixed-variant": "#004f4f",
+                    "on-secondary-fixed-variant": "#004590",
+                    "outline": "#839493",
+                    "surface-dim": "#131313"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(53, 53, 52, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .corner-accent {
+            position: relative;
+        }
+        .corner-accent::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            border-top: 2px solid rgba(0, 251, 251, 0.2);
+            border-left: 2px solid rgba(0, 251, 251, 0.2);
+            pointer-events: none;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-950/40 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-cyan-400" data-icon="waves">waves</span>
+<span class="text-xl font-bold tracking-[0.2em] text-white font-['Space_Grotesk'] uppercase">THERMOSYNC</span>
+</div>
+<button class="bg-secondary-container text-white px-5 py-2 rounded-lg font-label text-xs font-bold tracking-widest active:scale-95 transition-transform hover:shadow-[0_0_20px_rgba(68,143,255,0.3)]">
+                BUY NOW
+            </button>
+</div>
+<div class="bg-gradient-to-r from-transparent via-cyan-500/10 to-transparent h-[1px] w-full"></div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex flex-col items-center justify-center px-6 overflow-hidden">
+<!-- Background Glow -->
+<div class="absolute inset-0 bg-gradient-to-b from-cyan-500/5 via-transparent to-transparent pointer-events-none"></div>
+<div class="relative z-10 text-center max-w-3xl">
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-white tracking-tight mb-6 leading-tight">
+                    Master the <span class="text-primary-fixed">Elements</span>
+</h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant mb-10 max-w-xl mx-auto">
+                    Bluetooth-controlled warmth for the modern explorer. Experience precise thermal regulation at your fingertips.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary-fixed px-8 py-4 rounded-xl font-bold text-sm tracking-wide active:scale-95 transition-all shadow-[0_20px_40px_rgba(255,255,255,0.04)]">
+                        Shop ThermoSync
+                    </button>
+<button class="glass-card border border-white/10 text-white px-8 py-4 rounded-xl font-bold text-sm tracking-wide active:scale-95 transition-all">
+                        Technical Specs
+                    </button>
+</div>
+</div>
+<!-- Product Image Hero -->
+<div class="mt-16 relative w-full max-w-5xl aspect-[16/9] rounded-3xl overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.5)]">
+<img alt="ThermoSync Smart Jacket" class="w-full h-full object-cover" data-alt="Sleek black high-tech smart jacket with glowing cyan internal fiber optics worn by a hiker against a dark snowy mountain backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbHpm_2bzcrDPrhAtk9bOMBKnsGGro166gIv-z_ZoT67rF2tltpo1WkHfpd7d9bpjUi-0NuNzXTueWB5X3ogXXrAFv_bfdg35fIEFWYy48mr9iPyQMxjmDJyF4TR0ngV4Sgn7YJZoDbRFP_4oXBXDgfthOIENy_noOsc19-pthEkekOWEu_LnUAY25Mv6mMjKn1V5Bz30jPYVK3tgBk6ELLbuGW_w_iL50JGErQuEMngvK_-Oe8xYoaGXsr0gG384i2xSy8MWdYiY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+</section>
+<!-- Key Features Bento Grid -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- App Control -->
+<div class="glass-card p-8 rounded-3xl corner-accent flex flex-col justify-between min-h-[300px]">
+<div>
+<span class="material-symbols-outlined text-primary-fixed text-4xl mb-6" data-icon="edgesensor_high">edgesensor_high</span>
+<h3 class="font-headline text-2xl font-bold text-white mb-4">App-Connected Control</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Fine-tune your environment with the ThermoSync app. Real-time temperature adjustments from 20°C to 55°C.
+                        </p>
+</div>
+<div class="mt-6 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="text-[10px] font-label uppercase tracking-widest text-primary-fixed">Live Sync Active</span>
+</div>
+</div>
+<!-- Battery Life -->
+<div class="bg-surface-container-high p-8 rounded-3xl flex flex-col justify-between min-h-[300px]">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="battery_charging_90">battery_charging_90</span>
+<h3 class="font-headline text-2xl font-bold text-white mb-4">24h Battery Life</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Engineered for endurance. Our graphene-ion core provides a full day of warmth on a single USB-C charge.
+                        </p>
+</div>
+<div class="font-headline text-4xl font-light text-secondary">100% <span class="text-sm font-label uppercase tracking-tighter">Charge</span></div>
+</div>
+<!-- Materials -->
+<div class="glass-card p-8 rounded-3xl flex flex-col justify-between min-h-[300px]">
+<div>
+<span class="material-symbols-outlined text-primary-fixed text-4xl mb-6" data-icon="texture">texture</span>
+<h3 class="font-headline text-2xl font-bold text-white mb-4">Premium Materials</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Triple-layer construction featuring breathable nanopores, waterproof membrane, and ultra-soft thermal lining.
+                        </p>
+</div>
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border border-surface-dim bg-stone-800"></div>
+<div class="w-8 h-8 rounded-full border border-surface-dim bg-cyan-900"></div>
+<div class="w-8 h-8 rounded-full border border-surface-dim bg-stone-900"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Comparison Table -->
+<section class="py-24 px-6 bg-surface-container-low/50">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-bold text-white mb-4 uppercase tracking-widest">The Lineup</h2>
+<div class="h-1 w-20 bg-primary-container mx-auto"></div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline-variant/20">
+<th class="py-6 font-label text-xs uppercase tracking-widest text-on-surface-variant">Feature</th>
+<th class="py-6 font-headline text-lg font-bold text-white">ThermoSync Core</th>
+<th class="py-6 font-headline text-lg font-bold text-primary-fixed">ThermoSync Pro</th>
+</tr>
+</thead>
+<tbody class="text-sm font-body">
+<tr class="border-b border-outline-variant/10">
+<td class="py-6 text-on-surface-variant font-medium">Max Temp</td>
+<td class="py-6 text-white">45°C</td>
+<td class="py-6 text-white">55°C (Boost Mode)</td>
+</tr>
+<tr class="border-b border-outline-variant/10">
+<td class="py-6 text-on-surface-variant font-medium">Battery Life</td>
+<td class="py-6 text-white">12 Hours</td>
+<td class="py-6 text-white">24 Hours</td>
+</tr>
+<tr class="border-b border-outline-variant/10">
+<td class="py-6 text-on-surface-variant font-medium">Colors</td>
+<td class="py-6 text-white">2 Options</td>
+<td class="py-6 text-white">5 Options + Limited</td>
+</tr>
+<tr>
+<td class="py-6 text-on-surface-variant font-medium">Price</td>
+<td class="py-6 text-white font-bold">$299</td>
+<td class="py-6 text-primary-fixed font-bold">$449</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Customer Reviews -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-3xl font-bold text-white">Proven in the Field</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="glass-card p-10 rounded-3xl relative">
+<div class="flex gap-1 mb-6 text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic mb-8 leading-relaxed">
+                        "I used the Pro version during a 3-day trek in the Alps. The Bluetooth control is a game-changer when you're moving between shade and direct sun."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="User Profile" data-alt="Portrait of a rugged mountain climber with beard wearing technical gear in a cold environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrPLmNJjYyCXVM0M6s9vG6mNsMcINzsXprerV5YmO-cYcV80tT89N5a0C1IJ-YmWlecmh17l8yzlsOZ44CGhwVIXC5hM4d0sEhJYpvsvwrYcqMP7o49QuxqoD36YDXSMrY6RQPiAa1G-UrkpW9wktaXwOuayAIk9Gvb97_iimcP9DrVLJGxo1df2CUrHfmABLa46Cn1PfioC_NpbgtCdzd-F2jAs1qxRJVdx34O0B-qa6OEOFo8d7XM8qTpeMqRvcyo-M_K7A8Zc8"/>
+</div>
+<div>
+<div class="text-sm font-bold text-white">Marcus Thorne</div>
+<div class="text-[10px] text-on-surface-variant uppercase tracking-widest">Professional Climber</div>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="glass-card p-10 rounded-3xl relative">
+<div class="flex gap-1 mb-6 text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic mb-8 leading-relaxed">
+                        "The materials feel incredibly premium. It's the first smart jacket I've owned that actually looks like high-end fashion rather than a gadget."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="User Profile" data-alt="Modern woman in stylish urban winter clothing posing in a minimalist architecture setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu5R-p6xDaFRW9NHO5gzm8XQObu_Vb1lxgv1QPzUmQAyd9nVCIFysvfZJmvnZvK-VqdWL9yqhSDEhsBL-9s-MPBZamSUnOEz3caX-aftEERyNIKg3iADZNStJVT84WxiEQX6p_2HReCQlUja6Oi13wc38w74laDn06eHQw2VgaW0ilfC9pK0FAMaBnH-xWUBFt2w5_Zo4wFVW81XdAr3EE0k6lSJtbmfTGPp7OyCTs5_5lUPaSmZiedYhRWfxuFmNtqyoBTP4C-Uc"/>
+</div>
+<div>
+<div class="text-sm font-bold text-white">Elena Vance</div>
+<div class="text-[10px] text-on-surface-variant uppercase tracking-widest">Creative Director</div>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="glass-card p-10 rounded-3xl relative lg:col-span-1 md:col-span-2">
+<div class="flex gap-1 mb-6 text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic mb-8 leading-relaxed">
+                        "Cold morning commutes are finally tolerable. The battery actually lasts all week for my 40-minute daily use. Highly recommended."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="User Profile" data-alt="Young professional man in modern urban setting with city lights bokeh in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARnoJlRLiEdZ8xPZ9UWZC8DjHEVg8lisSngDuworug_A5KP1OUMNMtZdnX0Iksi4IVXtkVpHFdkYquCONgrHhzES_zhUd4xlkTfer44FbnUPOJDqhma-PiRGDUPmGFUzbOGp65N6I8FZD4XVbYaqb6YNZR0gRpnK_o8Ao_pCa7ueNoVtTrMNxMFHs7mCE91-QoWsT6Bp_Y-7pmXZEuvDw-DSRcWOyscrDdRvc_yfmBxs7-1b_CszTqXkysZnswvBmVKhXI_NAj9pw"/>
+</div>
+<div>
+<div class="text-sm font-bold text-white">Julian Ross</div>
+<div class="text-[10px] text-on-surface-variant uppercase tracking-widest">Tech Analyst</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-950 w-full py-12 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 border-t border-stone-800/50 pt-12">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-lg font-black text-white font-headline tracking-widest">THERMOSYNC</span>
+<p class="font-['Inter'] text-xs tracking-tight text-stone-500 max-w-xs text-center md:text-left">
+                    © 2024 THERMOSYNC KINETICS. ENGINEERED FOR EXTREMES.
+                </p>
+</div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-xs tracking-tight text-stone-500 hover:text-cyan-400 transition-colors" href="#">Instagram</a>
+<a class="font-['Inter'] text-xs tracking-tight text-stone-500 hover:text-cyan-400 transition-colors" href="#">Twitter</a>
+<a class="font-['Inter'] text-xs tracking-tight text-stone-500 hover:text-cyan-400 transition-colors" href="#">Technical Specs</a>
+<a class="font-['Inter'] text-xs tracking-tight text-stone-500 hover:text-cyan-400 transition-colors" href="#">Support</a>
+</div>
+</div>
+</footer>
+</body></html>
