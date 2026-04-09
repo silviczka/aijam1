@@ -94,7 +94,7 @@ a {
 
 .hero > *:not(.hero-snow) {
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 .hero h1 {
@@ -134,7 +134,8 @@ a {
 .hero-snow {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 3;
+  opacity: 0.9;
   pointer-events: none;
 }
 
@@ -146,7 +147,7 @@ a {
 
 @media (prefers-reduced-motion: reduce) {
   .hero-snow {
-    display: none;
+    opacity: 0.45;
   }
 }
 
